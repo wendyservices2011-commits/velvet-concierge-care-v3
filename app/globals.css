@@ -795,8 +795,10 @@ details[open] summary::after { transform: rotate(45deg); }
   .siteNavLinks, .siteNav .navCta { display: none; }
   .siteNav .hamburger { display: flex; }
 
-  .hero { padding: 140px 8% 80px; background-position: center; }
-  .heroLeft { max-width: 100%; }
+  /* Split hero — stack on mobile: photo on top, text below */
+  .hero { grid-template-columns: 1fr; min-height: auto; }
+  .heroLeft { padding: 80px 8% 70px; justify-content: center; min-height: 65vh; }
+  .heroRight { height: 60vw; min-height: 260px; }
 
   .intro { grid-template-columns: 1fr; gap: 48px; padding: 80px 8%; }
 
