@@ -795,10 +795,12 @@ details[open] summary::after { transform: rotate(45deg); }
   .siteNavLinks, .siteNav .navCta { display: none; }
   .siteNav .hamburger { display: flex; }
 
-  /* Split hero — stack on mobile: photo on top, text below */
+  /* Split hero — stack on mobile: text on top, photo below */
   .hero { grid-template-columns: 1fr; min-height: auto; }
-  .heroLeft { padding: 80px 8% 70px; justify-content: center; min-height: 65vh; }
-  .heroRight { height: 60vw; min-height: 260px; }
+  .heroLeft { padding: 100px 8% 60px; justify-content: center; min-height: auto; }
+  .heroRight { height: 65vw; min-height: 280px; }
+  .heroEyebrow { white-space: normal; font-size: 0.58rem; letter-spacing: 0.16em; }
+  .heroLeft h1 { font-size: clamp(2.6rem, 9vw, 4rem); }
 
   .intro { grid-template-columns: 1fr; gap: 48px; padding: 80px 8%; }
 
